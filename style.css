@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    padding: 0 5px;
+    font-family: Arial, sans-serif;
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px 30px;
+    width: 100%;
+}
+
+.box {
+    width: calc(50% - 15px);
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    padding: 25px;
+    color: white;
+    flex-shrink: 0;
+}
+
+
+
+.box1 {
+    background: #8a2be2;
+}
+
+.box2 {
+    background: #000;
+}
+
+.box3 {
+    background: #008000;
+}
+
+.box4 {
+    background: #0000ff;
+}
+
+
+
+.chip {
+    position: absolute;
+    width: 130px;
+    height: 55px;
+    object-fit: contain;
+
+    right: 25px;
+    bottom: 35px;
+
+    top: auto;
+    left: auto;
+}
+
+
+
+.bank {
+    position: absolute;
+    width: 240px;
+    height: 65px;
+    object-fit: contain;
+    top: 30px;
+    right: 25px;
+}
+
+
+
+.number {
+    position: absolute;
+    left: 22px;
+    top: 128px;
+    font-family: "Courier New", monospace;
+    font-size: clamp(20px, 3.3vw, 34px);
+    letter-spacing: 2px;
+    white-space: nowrap;
+    color: white;
+}
+
+
+
+.name {
+    position: absolute;
+    left: 22px;
+    top: 176px;
+    font-size: 23px;
+    font-weight: bold;
+    white-space: nowrap;
+    color: white;
+}
+
+
+
+.valid {
+    position: absolute;
+    left: 22px;
+    top: 229px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.valid span {
+    font-size: 14px;
+}
+
+.valid p {
+    font-size: 23px;
+}
+
+
+.visa {
+    position: absolute;
+    width: 55px;
+    height: 45px;
+    object-fit: contain;
+    left: 25px;
+    top: 65px;
+}
